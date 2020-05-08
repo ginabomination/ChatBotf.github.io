@@ -1,6 +1,6 @@
 const userinput = document.querySelector("#user input");
 const submitbutton = document.querySelector("#Submit");
-const botchatoutput = document.querySelector("#bot chat output");
+const botchatoutput = document.querySelector("#botchatoutput");
 const user = document.querySelector("#user");
 
 submitbutton.addEventListener ("click", response);
@@ -14,6 +14,7 @@ function response() {
 user.textContent = userinput.value
 }
 
+function response()
 
 
-null 
+null
