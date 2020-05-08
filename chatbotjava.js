@@ -10,7 +10,7 @@ const greetings = ["hello", "hi", "good day"];
 const randomgreeting = Math.floor(Math.random() * greetings.length)
 
 function response() {
-    botchatoutput.textContent = greetings[randomgreeting] + " " + userinput.value + "How may i aid in your troubles?";
+    botchatoutput.textContent = greetings[randomgreeting] + " " + userinput.value + ". " + "How may i aid in your troubles?";
 user.textContent = userinput.value
 }
 
