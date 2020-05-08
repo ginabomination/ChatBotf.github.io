@@ -10,11 +10,25 @@ const greetings = ["hello", "hi", "good day"];
 const randomgreeting = Math.floor(Math.random() * greetings.length)
 
 function response() {
-    botchatoutput.textContent = greetings[randomgreeting] + " " + userinput.value + ". " + "How may i aid in your troubles?";
-user.textContent = userinput.value
+    while(botChat.textContent == "What is your name?") {
+        user.style.color = "red";
+        botChat.innerHTML = greetingList[greeting] + " " + userInput.value;
+        user.innerHTML = userInput.value;
+        setTimeout(() => {botChat.innerHTML = "Do you like monsters?" }, 2000);;
+        userInput.value = null;
+    } 
+    
+    while(botChat.textContent == "Do you like monsters?") {
+        user.style.color = "blue";
+        if (userInput.value == "Y") {
+            botChat.innerHTML = "Excellent!";
+        }
+        else if (userInput.value == "N") {
+            botChat.textContent = "What a real shame";
+        }
+        else {
+            botChat.textContent = "Please reply with Yes or No.";
+            setTimeout(() => {botChat.innerHTML = "Do you like monsters?" }, 2000);;
+        }
+    }
 }
-
-function response()
-
-
-null
