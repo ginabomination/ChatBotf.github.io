@@ -2,9 +2,7 @@ const userinput = document.querySelector("#user input");
 const submitbutton = document.querySelector("#Submit");
 const botchatoutput = document.querySelector("#botchatoutput");
 const user = document.querySelector("#user");
-
-submitbutton.addEventListener ("click", response);
-
+const output = document.querySelector("#output")
 const greetings = ["hello", "hi", "good day"];
 
 const randomgreeting = Math.floor(Math.random() * greetings.length)
