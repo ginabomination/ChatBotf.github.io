@@ -5,6 +5,8 @@ const user = document.querySelector("#user");
 const output = document.querySelector("#output")
 const greetings = ["hello", "hi", "good day"];
 
+output.addEventListener ("click", response);
+
 const randomgreeting = Math.floor(Math.random() * greetings.length)
 
 function response() {
