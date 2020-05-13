@@ -19,7 +19,7 @@ function response() {
     } 
     
     while(botchatoutput.textContent == "Do you like monsters?") {
-        user.style.color = "blue";
+        user.style.color = "grey";
         if (userInput.value == "Y") {
             botChat.innerHTML = "Excellent!";
         }
