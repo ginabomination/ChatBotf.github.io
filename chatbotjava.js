@@ -5,9 +5,13 @@ const user = document.querySelector("#user");
 const output = document.querySelector("#output")
 const greetings = ["hello", "hi", "good day"];
 
+alert("testing")
+
 output.addEventListener ("click", response);
 
 const randomgreeting = Math.floor(Math.random() * greetings.length)
+
+document.getElementById ("botchatoutput").onclick
 
 function response() {
     while(botChat.textContent == "What is your name?") {
