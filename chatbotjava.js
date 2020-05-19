@@ -1,21 +1,25 @@
-const userinput = document.querySelector("#user input");
-const submitbutton = document.querySelector("#Submit");
+const userInput = document.querySelector("#user");
+const submit = document.querySelector("#Submit");
 const botchatoutput = document.querySelector("#botchatoutput");
 const user = document.querySelector("#user");
-const output = document.querySelector("#output")
-const greetings = ["hello", "hi", "good day"];
+const submit = document.querySelector("#output")
+const textoutput = document.querySelector("#body")
 
-alert("testing")
+submit.addEventListener("click", response);
 
-output.addEventListener ("click", response);
+greetingList = ["Hello", "Hi", "Hey there", "Yo"];
 
+greeting = Math.floor(Math.random() * greetingList.length);
+submit.addEventListener ("click", response);
+
+greetings = ["hello", "hi", "good day"]
 const randomgreeting = Math.floor(Math.random() * greetings.length)
 
-document.getElementById ("botchatoutput").onclick
+document.getElementById ("botchatoutput").click
 
 function response() {
     while(botChat.textContent == "What is your name?") {
-        user.style.color = "red";
+        userInput.style.color = "grey";
         botchatoutput.innerHTML = greetingList[greeting] + " " + userInput.value;
         user.innerHTML = userInput.value;
         setTimeout(() => {botChat.innerHTML = "Do you like monsters?" }, 2000);;
@@ -34,5 +38,7 @@ function response() {
             botchatoutput.textContent = "Please reply with Yes or No.";
             setTimeout(() => {botChat.innerHTML = "Do you like monsters?" }, 2000);;
         }
+    
     }
+    alert("testing")
 }
